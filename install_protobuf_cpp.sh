@@ -41,7 +41,7 @@ export PROTOCOL_BUFFERS_PYTHON_IMPLEMENTATION=cpp
 python3 setup.py build --cpp_implementation
 python3 setup.py test --cpp_implementation
 python3 setup.py bdist_wheel --cpp_implementation
-cp dist/*.whl /opt
+# cp dist/*.whl /opt
 sudo pip3 install dist/*.whl
 # sudo python3 setup.py install --cpp_implementation
 
