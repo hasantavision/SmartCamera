@@ -11,7 +11,8 @@ sudo apt-get update
 
 sudo apt-get install -y build-essential make cmake cmake-curses-gui git g++ pkg-config curl libfreetype6-dev
 sudo apt-get install -y libcanberra-gtk-module libcanberra-gtk3-module protobuf-compiler libprotoc-dev python3-dev python3-pip
-sudo pip3 install -U pip cython testresources setuptools==49.6.0
+sudo apt-get install -y autoconf libtool
+sudo pip3 install -U pip cython testresources setuptools==49.6.0 wheel
 sudo pip3 install numpy==1.19.4 matplotlib==3.2.2
 
 pushd $folder
@@ -51,7 +52,6 @@ sudo apt-get install libhdf5-serial-dev hdf5-tools libhdf5-dev zlib1g-dev zip li
 sudo pip3 install -U --no-deps numpy==1.19.4 future==0.18.2 mock==3.0.5 keras_preprocessing==1.1.2 keras_applications==1.0.8 gast==0.4.0 pybind11 pkgconfig packaging keras==2.7.0
 sudo env H5PY_SETUP_REQUIRES=0 pip3 install -U h5py==3.1.0
 sudo pip3 install --extra-index-url https://developer.download.nvidia.com/compute/redist/jp/v461 tensorflow
-sudo apt-get install -y autoconf libtool
 
 sudo apt-get install python3-pyqt5
 sudo pip3 install onnx==1.11.0
